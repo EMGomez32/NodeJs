@@ -1,0 +1,28 @@
+{
+  "name": "tyscrip",
+  "version": "1.0.0",
+  "description": "Proyrcto de ejemplo para el desarrollo con TS",
+  "main": "index.js",
+  "scripts": {
+    "tsNode": "cd src && ts-node index.ts",
+    "start": "nodemon",
+    "transpilation": "tsc",
+    "build:prod":"rimraf ./build && tsc",
+    "start:prod": "npm run build:prod&& node build/index.js"
+  },
+  "keywords": [
+    "typescript",
+    "ts"
+  ],
+  "author": "@EMGomez",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.0",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.1"
+  }
+}
